@@ -1,0 +1,9 @@
+# Declaro como y desde donde se inicia el servidor
+services:
+  app-csv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # para tener un reload por cada cambio
+    volumes:
+      - .:/app # con : lo enlaso con la carpeta actual
